@@ -1,6 +1,7 @@
-.navigation ul {
-    list-style-type: none;
+* {
+    box-sizing: border-box; 
+    border: 2px solid red;
 }
-.navigation ul li {
-    display: inline;
+.company {
+    display: inline-flex;
 }

@@ -3,6 +3,18 @@
   border: 1px solid red;
 }
 
+/*Global*/
+/*Body*/
+body {
+  font-size: 16px;
+}
+
+section {
+  padding: 96px 0;
+  background-color: #F0E5DB;
+}
+
+/*Navigation*/
 .navigation {
   height: 100px;
   background-color: transparent;
@@ -21,8 +33,11 @@
 }
 
 .bar .company p {
-  font-size: 16px;
+  margin: 20px;
+  font-size: 36px;
   text-align: center;
+  font-family: "Permanent Marker";
+  color: goldenrod;
 }
 
 .menu {
@@ -35,9 +50,10 @@
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 0;
+  margin: 35px auto;
 }
 
 .menu ul li {
@@ -45,18 +61,28 @@
 }
 
 .menu ul li a {
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 800;
+  padding-right: 24px;
+  color: black;
+  text-shadow: 2px 2px darkgray;
+  transition: 0.3s;
 }
 
+a:only-child:hover {
+  color: gold;
+}
+
+/*Main Section*/
 .home {
   background-image: url("/images/welcome/welcome-image.jpg");
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center center;
   background-size: cover;
-  margin-bottom: 48px;
   padding-bottom: 48px;
 }
 
@@ -74,8 +100,44 @@
       align-items: center;
 }
 
-.services {
-  padding: 48px 0;
+.home-inner h4 {
+  font-family: "Permanent Marker";
+  font-size: 1.3rem;
+  margin-bottom: 26px;
+}
+
+.home-inner h1 {
+  font-family: "Permanent Marker";
+  font-size: 2rem;
+}
+
+.home-inner button {
+  background-color: gold;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 15px 32px;
+  font-size: 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+/*Our Services Section*/
+.services .container .header h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Permanent Marker";
+}
+
+.services .container .header p {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+  font-family: "Permanent Marker";
 }
 
 .box {
@@ -87,5 +149,88 @@
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  padding: 0;
+}
+
+.box p {
+  text-align: justify;
+  padding: 10px;
+  font-family: "Permanent Marker";
+}
+
+.box h5 {
+  margin: 10px;
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.box a {
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid gold;
+}
+
+.box i {
+  color: gold;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin: auto;
+  transform: translate(-50% -50%);
+  transition: 0.3s;
+}
+
+/*portfolio*/
+.portfolio .container .header h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Permanent Marker";
+}
+
+.portfolio .container .header p {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+  font-family: "Permanent Marker";
+}
+
+.card .card-image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.card .card-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform .3s;
+}
+
+.card-image:hover {
+  transform: scale(1.2);
+}
+
+.card .card-description h6 {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.card .card-description p {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

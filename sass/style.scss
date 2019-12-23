@@ -1,7 +1,7 @@
- *{
+ /*{
     box-sizing: border-box;
     border: 1px solid red;
-}
+}*/
 /*Global*/
 $font-marker: 'Permanent Marker';
 $font-header: 'Work Sans', sans-serif;
@@ -102,7 +102,10 @@ a:only-child:hover{
         text-transform: uppercase;
         font-weight: 900;
         transition: 0.3s;
-
+    }
+    .welcome {
+        top: 30%;       
+        position: absolute;
     }
 }
 /*Our Services Section*/
@@ -174,6 +177,9 @@ a:only-child:hover{
         font-family: $font-marker;
     }
 }
+.card {
+    background-color: lightgray;
+}
 .card .card-image {
     width: 100%;
     height: 300px;
@@ -187,15 +193,13 @@ a:only-child:hover{
         transition: transform .3s;
     }
 }
-.card-image:hover {
-    transform: scale(1.2);
-}
 .card .card-description {
     h6 {
         text-align: center;
         font-family: $font-header;
         font-size: 24px;
         padding-bottom: 5px;
+        margin: 10px;
     }
     p {
         text-align: center;
@@ -204,3 +208,44 @@ a:only-child:hover{
         padding: 0;
     }
 }
+/*Footer*/
+footer {
+    margin: 24px auto;
+}
+.author {
+    justify-content: center;
+    align-items: center;
+}
+.copyright p {
+    font-family: $font-header;
+}
+.social-media ul {
+    list-style-type: none;
+}
+.social-media ul li {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid darkgray;
+    background-color: darkgray;
+    content: "";
+    height: 60px;
+    width: 60px;
+    position: relative;
+
+    i {
+        color: black;
+        line-height: 60px;
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        transform: translate(-50% -50%);
+        left: -50%;
+        right: -50%;
+    }
+}
+

@@ -1,8 +1,7 @@
-* {
-  box-sizing: border-box;
-  border: 1px solid red;
-}
-
+/*{
+    box-sizing: border-box;
+    border: 1px solid red;
+}*/
 /*Global*/
 /*Body*/
 body {
@@ -124,6 +123,11 @@ a:only-child:hover {
   transition: 0.3s;
 }
 
+.home-inner .welcome {
+  top: 30%;
+  position: absolute;
+}
+
 /*Our Services Section*/
 .services .container .header h1 {
   text-align: center;
@@ -199,6 +203,10 @@ a:only-child:hover {
   font-family: "Permanent Marker";
 }
 
+.card {
+  background-color: lightgray;
+}
+
 .card .card-image {
   width: 100%;
   height: 300px;
@@ -216,15 +224,12 @@ a:only-child:hover {
   transition: transform .3s;
 }
 
-.card-image:hover {
-  transform: scale(1.2);
-}
-
 .card .card-description h6 {
   text-align: center;
   font-family: "Work Sans", sans-serif;
   font-size: 24px;
   padding-bottom: 5px;
+  margin: 10px;
 }
 
 .card .card-description p {
@@ -232,5 +237,52 @@ a:only-child:hover {
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
   padding: 0;
+}
+
+/*Footer*/
+footer {
+  margin: 24px auto;
+}
+
+.author {
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.copyright p {
+  font-family: "Work Sans", sans-serif;
+}
+
+.social-media ul {
+  list-style-type: none;
+}
+
+.social-media ul li {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid darkgray;
+  background-color: darkgray;
+  content: "";
+  height: 60px;
+  width: 60px;
+  position: relative;
+}
+
+.social-media ul li i {
+  color: black;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  transform: translate(-50% -50%);
+  left: -50%;
+  right: -50%;
 }
 /*# sourceMappingURL=style.css.map */
